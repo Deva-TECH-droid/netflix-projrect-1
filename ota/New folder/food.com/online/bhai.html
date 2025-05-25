@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix India – Watch TV Shows Online, Watch Movies Online</title>
+    <link rel="stylesheet" href="netflix.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Basic styles for the body and main content */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #141414;
+            color: #e5e5e5;
+        }
+
+        .main {
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #141414;
+        }
+
+        .btn {
+            background-color: #e50914;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .btn-red {
+            background-color: #e50914;
+        }
+
+        .btn-red-sm {
+            background-color: #e50914;
+            font-size: 0.8em;
+        }
+
+        .hero {
+            margin: 20px 0;
+        }
+
+        .hero-buttons {
+            margin-top: 20px;
+        }
+
+        .hero input {
+            padding: 10px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+        }
+
+        .slider-container {
+            margin: 20px 0;
+        }
+
+        .first {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .secImg {
+            position: relative;
+        }
+
+        .separation {
+            height: 20px;
+            background-color: #333;
+        }
+
+        .faq {
+            padding: 20px;
+        }
+
+        .faqbox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #141414;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer-item {
+            margin: 10px 0;
+        }
+
+        /* Modal styles */
+        .modal {
+            display: none; /* Hidden by default */
+            position: fixed; /* Stay in place */
+            z-index: 1; /* Sit on top */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0, 0, 0); /* Fallback color */
+            background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+            padding-top: 60px; /* Location of the box */
+        }
+
+        .modal-content {
+            background-color: #fefefe;
+            margin: 5% auto; /* 15% from the top and centered */
+            padding: 20px;
+            border: 1px solid #888;
+            width: 300px; /* Could be more or less, depending on screen size */
+            border-radius: 5px;
+        }
+
+        .close {
+            color: #aaa;
+            float: right;
+            font-size: 28px;
+            font-weight: bold;
+        }
+
+        .close:hover,
+        .close:focus {
+            color: black;
+            text-decoration: none;
+            cursor: pointer;
+        }
+
+        .login-input {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-button {
+            background-color: #e50914;
+            color: white;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            width: 100%;
+        }
+
+        .signup-link {
+            display: block;
+            text-align: center;
+            margin-top: 10px;
+            color: #e50914;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="main">
+        <nav>
+            <img width="53" src="netflix logo.png" alt="Netflix logo">
+            <div>
+                <button class="btn">English</button>
+                <button class="btn btn-red-sm" id="signInBtn">Sign In</button>
+            </div>
+        </nav>
+        <div class="box">
+        </div>
+        <div class

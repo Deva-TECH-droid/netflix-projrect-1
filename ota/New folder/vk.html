@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple Animation</title>
+  <style>
+    /* Define the basic styles for the page */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #cf1212;
+    }
+
+    /* Style the animated box */
+    .box {
+      width: 100px;
+      height: 100px;
+      background-color: #a634db;
+      position: absolute;
+      animation: move 5s infinite alternate;
+      text-align: center;
+      margin-top: 10px;
+    }
+
+    /* Define the animation */
+    @keyframes move {
+      0% {
+        transform: translateX(0); /* Start from the left */
+      }
+      100% {
+        transform: translateX(300px); /* Move 300px to the right */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box"> AUR BHAI</div> <!-- The animated box -->
+
+</body>
+</html>

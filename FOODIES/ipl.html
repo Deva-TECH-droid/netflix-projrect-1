@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ipl2</title>
+    <link rel="stylesheet" href="ipl.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <img src="https://images.seeklogo.com/logo-png/53/1/tata-ipl-logo-png_seeklogo-531750.png" alt="">
+        </div>
+
+        <div class="background">
+            <img src="https://logodix.com/logo/1748208.png"id="logobg" alt="">
+        </div>
+
+        <div class="heading">
+            <h1 id="head">
+                KOLKATA KNIGHT RIDERS
+            </h1>
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia molestiae quasi, praesentium nam adipisci omnis vitae, in eius quo unde natus soluta! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, alias enim? Sint voluptate quam vero minima error odio itaque suscipit aspernatur excepturi.
+            </p>
+
+            <button>WATCH NOW</button>
+        </div>
+
+        <div class="image">
+            <img  id="myimage" src="kkr.jfif" alt="">
+        </div>
+
+        <div class="navbar">
+            <ul>
+                <li>Home</li>
+                <li>team</li>
+                <li>performance</li>
+                <li>rank</li>
+            </ul>
+
+
+
+        </div>
+
+        <div class="list">
+            <ol>
+                <li onclick="myFun('rcb.ff','red','royal chalengers bangalor', 'rcb.ff')">RCB</li>
+                <li>CSK</li>
+                <li>SRH</li>
+                <li>MI</li>
+                <li>RR</li>
+                <li>LSG</li>
+            </ol>
+
+        </div>
+    </div>
+    <script>
+        function myFun(image, colour, head, logo){
+            document.getElementById('myimage').src=image;
+            document.querySelector('.body').style.background=colour;
+            document.querySelector('button').style.background=colour;
+            document.getElementById('head').innerHTML=head;
+            document.getElementById('logobg').src=logo;
+
+        }
+    </script>
+    
+</body>
+</html>

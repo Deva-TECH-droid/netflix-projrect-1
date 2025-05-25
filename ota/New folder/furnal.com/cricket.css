@@ -1,0 +1,204 @@
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: black;
+    min-height: 100vh;
+    min-width: 100vw;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+.contanier {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: rgb(53, 52, 52);
+    overflow: hidden;
+    position: relative;
+}
+
+.cricket-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #444;
+    box-shadow: 0 2px 4px black;
+    border-radius: 5px;
+    padding: 20px;
+    /* height: 150px; */
+    width: 400px;
+}
+
+#main {
+    font-size: 30px;
+    font-weight: 1000;
+    font-family: 'Times New Roman', Times, serif;
+    stroke: antiquewhite;
+    color: #4063ff;
+    margin-bottom: 5px;
+
+}
+
+.cricket-card img {
+    width: 200px;
+    height: 200px;
+    border-radius: 100px;
+    object-fit: cover;
+    box-shadow: 0 2px 4px black;
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+}
+
+.cricket-card img:hover {
+    transform: scale(1, 1);
+    background-color: #4063ff;
+}
+
+.cricket-card p {
+    margin: 0;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+#jersey-no{
+    font-size: 18px;
+    color: #999;
+    margin-bottom: 5vw;
+    margin-top: 3vw;
+    margin-left: -17vw;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    display: flex;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+}
+#jersey-icon{
+    width: 20px;
+    height: 28px;
+    background: #666;
+    position: absolute;
+    margin-left: 27vw;
+    padding-left: 2px;
+    padding-right: 2px;
+    padding-top: 5px;
+    color: #999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 3px;
+}
+
+.R{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#R{
+    color: #999;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background: #858882;
+    width: 25px;
+    height: 20px;
+    margin-right: 5px;
+    border-radius: 15px 5px 10px 7px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 2px;
+}
+
+#jersey-icon::before{
+    content: "";
+    position: absolute;
+    top: 2%;
+    left: -5px;
+    transform: translateY(-50%);
+    width: 8px;
+    height: 12px;
+    background:#666;
+    border-radius: 1px;
+    transform: rotate(55deg);
+}
+#jersey-icon::after {
+    content: "";
+    position: absolute;
+    top: 1%;
+    left: 21px;
+    width: 8px;
+    height: 12px;
+    background: #666;
+    border-radius: 1px;
+    transform: translateY(-50%) rotate(-55deg);
+}
+
+.stats{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: 20px;
+    margin-top: 1vw;
+}
+#half-centuries{
+    margin-left:5vw;
+}
+
+#next-button{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 200px;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 5vw;
+    text-transform: uppercase;
+    color: white;
+    background-color: transparent;
+    border: 2px solid #0077FF;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: border-color 0.2s;
+    box-shadow: 0 2px 4px black;
+    transform: translateY(0);
+}
+
+#next-button:hover{
+    border-color: #a0c1f0;
+}
+
+#next-button:active{
+    border-color: rgb(29, 51, 247);
+}
+
+#next-button:focus{
+    outline: none;
+}
+
+/* #next-button.animated{
+    animation: nextAnimation 1s infinite;
+}
+
+@keyframes nextAnimation {
+    0%{
+        border-color: rgb(141, 49, 49);
+    }
+    50%{
+        border-color: rgb(17, 92, 36);
+    }
+    100%{
+        border-color: aqua;
+    }
+} */

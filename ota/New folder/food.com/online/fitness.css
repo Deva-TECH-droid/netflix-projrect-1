@@ -1,0 +1,158 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(90deg, #ffcc00, #ff9900); /* Yellow to Orange gradient */
+    padding: 20px 40px;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+nav {
+    flex-grow: 1;
+    margin: 0 20px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #000000; /* Lighter yellow on hover */
+}
+
+.cta-button {
+    background-color: #ff9900; /* Orange */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #000000; /* Lighter yellow on hover */
+}
+
+/* Mobile Menu Toggle */
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle .bar {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 3px 0;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* Hide links by default */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background: #ff9900; /* Orange background for mobile menu */
+        width: 100%;
+        padding: 20px;
+    }
+
+    .nav-links.active {
+        display: flex; /* Show links when active */
+    }
+
+    .menu-toggle {
+        display: flex; /* Show menu toggle on mobile */
+    }
+}
+.hero {
+    display: grid;
+    place-items: center; /* Center content */
+    height: 100vh; /* Full viewport height */
+    background-image: url('fittnes22.webp'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire section */
+    background-position: center; /* Center the image */
+    color: yellow; /* Yellow text */
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content {
+    z-index: 2; /* Ensure content is above background */
+    text-align: center;
+    padding: 20px; /* Add some padding */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for better readability */
+    border-radius: 10px; /* Rounded corners */
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    animation: fadeIn 1s ease-in; /* Animation for heading */
+}
+
+p {
+    font-size: 24px;
+    margin-bottom: 30px;
+    animation: fadeIn 1.5s ease-in; /* Animation for paragraph */
+}
+
+.cta-button {
+    background-color: yellow; /* Yellow button */
+    color: black; /* Black text */
+    border: none;
+    padding: 15px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: background-color 0.3s, transform 0.3s; /* Transition for hover effect */
+}
+
+.cta-button:hover {
+    background-color: #ffcc00; /* Lighter yellow on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+/* Animation Keyframes */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

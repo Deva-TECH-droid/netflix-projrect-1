@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,900;1,400;1,900&display=swap');*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+:root{
+    --white-color : #fff;
+    --dark-color :#030c04;
+    --primary-color:#830f3f;
+    --secondary-color:#ff970e;
+    --light-pink-color:rgb(248, 117, 139);
+    --medium-gray-color: gray;
+
+
+    --font-weight-noramal: 400;
+    --font-weight-medium: 500;
+    --font-weight-semibold: 600;
+    --font-weight-bold: 700;
+
+    --border-radius-s: 8px;
+    --border-radius-m: 39px;
+    --border-radius-circle: 50%;
+
+    --site-max-width: 1300px;
+}
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img{
+    width: 100%;
+}
+
+header{
+     position: fixed; 
+    width: 100%;
+    z-index: 5; 
+    background:var(--primary-color) ; 
+}
+
+header .navbar{
+    display: flex;
+    padding: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .logo-text{
+    color: rgb(255, 255, 255);
+}
+
+.navbar .nav-logo .nav-text{
+    color: var(--white-color);
+    font-size: 10px;
+    font-weight: var(--font-weight-bold);
+}
+
+.navbar .nav-menu{
+display: flex;
+padding: 20px;
+}
+
+.navbar .nav-menu .nav-links{
+    padding: 10px 8px;
+    color: var(--white-color);
+    font-size: 25px;
+    border-radius: var(--border-radius-m);
+    transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-links:hover{
+    color: var(--primary-color);
+    background: var(--secondary-color);
+}
+.hero-section{
+    min-height: 100vh;
+    background: var(--primary-color);
+}
+.hero-section .section-content {
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    color: var(--white-color);
+    justify-content: space-between;
+}
+
+.hero-section .hero-detail .title{
+    font-size: 2rem;
+    color: var(--secondary-color);
+    font-family: "Miniver",sans-serif;
+}
+
+.hero-section .hero-detail .subtitle {
+    margin-top: 8px;
+    max-width: 70%;
+    font-size: 2rem;
+    font-weight: var(--font-weight-semibold);
+}
+
+.hero-section .hero-detail .description{
+    max-width: 70%;
+    margin: 24px 0 40px;
+    font-size: 1.59rem;
+}
+/* }
+.hero-section .hero-detail .button{
+    display: flex;
+    gap: 23px;
+}
+
+.hero-section .hero-detail .buttons {
+    padding: 10px 26px;
+    border: 2px solid transparent;
+    color: var(--primary-color);
+    border-radius: var(--border-radius-m);
+    background: var(--secondary-color);
+    font-weight: var(--font-weight-medium);
+} */
+
+.hero-section .hero-detail .buttons { 
+    display: flex; 
+    gap: 23px; 
+}
+
+.hero-section .hero-detail .button { 
+    padding: 10px 26px; 
+    border: 2px solid transparent; 
+    color: var(--primary-color); 
+    border-radius: var(--border-radius-m); 
+    background: var(--secondary-color); 
+    font-weight: var(--font-weight-medium); 
+}
+
+.hero-section .hero-detail .button:hover,
+.hero-section .hero-detail .contact-now{
+    color: white;
+    border-color: var(--white-color);
+    background: transparent;
+}
+
+.hero-section .hero-detail .contact-now:hover{
+    color: var(--primary-color);
+    border-color: var(--secondary-color);
+    background: var(--secondary-color);
+}
+
+
+.hero-section .hero-image-wrapper {
+    max-width: 500px;
+    margin-right: 30px;
+}
+
+.hero-section .hero-image-wrapper img{
+    width: 600px;
+    height: 65vh;
+    mix-blend-mode: color-burn;
+}
+
+@media screen and (max-width: 900px) {
+    .navbar .nav-menu {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 300px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 100px;
+        background-color: var(--white-color);
+    } 
+
+    .navbar .nav-menu .nav-links {
+        color: var(--dark-color);
+        display: block;
+        margin-top: 17px;
+        font-size: 1.79rem;
+    }
+}
+

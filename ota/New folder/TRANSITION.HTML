@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TRANISTION</title>
+    <style>
+        .container{
+            background-color: rgb(156, 100, 156);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 600px;
+        }
+        #btn{
+            align-items: center;
+            justify-content: center;
+            padding: 10px 19px;
+            background-color: rgb(16, 19, 19);
+            border-radius: 24px;
+            transition: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in;
+            transition-delay: o.2s;
+        }
+        #btn:hover{
+            background-color: rgb(196, 59, 196);
+            padding: 20px 38px;
+            border-radius: 30px;
+            font-size: 21px;
+            color: rgb(214, 16, 16);
+        }
+         
+    </style>
+</head>
+<body>
+<div class="container">
+   <button id="btn">Submit</button>
+
+    </div>
+</div>
+    
+</body>
+</html>

@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.navbar {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    background-color: #333;
+    padding: 0 20px; /* Adjust padding to remove top/bottom space */
+    height: 60px; /* Set a fixed height for the navbar */
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition for background color and scaling */
+}
+
+.navbar:hover {
+    background-color: #444; /* Darker shade on hover */
+    transform: scale(1.02); /* Slightly scale up the navbar */
+}
+
+.logo img {
+    height: 50%; /* Make the logo height 100% of the navbar */
+    width: 30%;
+    margin-right: 20px; /* Space between logo and nav links */
+    transition:transform 0.3s ease;
+}
+
+.logo img:hover {
+    transform: scale(1.1); /* Scale the logo up on hover */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1; /* Allow nav links to take up remaining space */
+}
+
+.nav-links li {
+    position: relative;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6347; /* Change color on hover */
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -5px;
+    width: 0;
+    height: 2px;
+    background-color: #ff6347;
+    transition: width 0.3s ease, left 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+    left: 0;
+}
+.food-variety {
+    padding: 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.food-variety h2 {
+    margin-bottom: 20px;
+    color: #161414; /* Change to a vibrant color */
+    font-size: 2.5em; /* Increase font size */
+    font-weight: bold; /* Make the text bold */
+    text-transform: uppercase; /* Transform text to uppercase */
+    letter-spacing: 2px; /* Add spacing between letters */
+    position: relative; /* Position for the pseudo-element */
+}
+
+.food-variety h2::after {
+    content: '';
+    display: block;
+    width: 50px; /* Width of the underline */
+    height: 4px; /* Height of the underline */
+    background-color: #ff6347; /* Color of the underline */
+    margin: 10px auto; /* Center the underline */
+    border-radius: 2px; /* Optional: rounded corners for the underline */
+}
+
+.food-item {
+    margin: 20px;
+    display: inline-block;
+    width: 200px; /* Adjust width as needed */
+    opacity: 0; /* Start hidden */
+    transform: translateY(20px); /* Start slightly below */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Smooth transition */
+}
+
+.food-item.visible {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+}
+
+.food-item img {
+    width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional: add rounded corners */
+    transition: transform 0.3s ease; /* Smooth transition for scaling */
+}
+
+.food-item img:hover {
+    transform: scale(1.05); /* Scale the image slightly on hover */
+}
+
+.food-item h3 {
+    margin: 10px 0;
+    color: #ff6347; /* Change color to match your theme */
+}
+
+.food-item p {
+    color: #666; /* Subtle text color for descriptions */
+}
+
+

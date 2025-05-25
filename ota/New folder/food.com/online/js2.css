@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+body{
+    background-color: coral;
+}
+.quote-box{
+    background-color: rgb(245, 190, 150);
+    width: 700px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 20px 0 solid black;
+}
+.quote-box h2{
+  font-size: 32px;
+  margin-bottom: 48px;
+  position: relative;
+}
+.quote-box h2::after{
+    content: " ";
+    width: 75px;
+    height: 3px;
+    border-radius: 3px;
+    background-color: rgb(4, 19, 189);
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.quote-box-blockquote{
+    font-size: 26px;
+    min-height: 110px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.quote-box-blockquote::before, .quote-box-blockquote::after{
+    content: '"';
+}
+
+.quote-box span{
+    display: block;
+    margin-top: 10px;
+    float: right;
+    position: relative;
+}
+.quote-box span::before{
+    content: '';
+    width: 22px;
+    height: 3px;
+    background-color: rgb(28, 30, 30);
+    position: absolute;
+    top: 50%;
+    left: -30px;
+}
+.quote-box div{
+    width: 100%;
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.quote-box button{
+    background-color: rgb(16, 118, 173);
+    color: beige;
+    border-radius: 22px;
+    border: 1px solid black;
+    width: 150px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.quote-box button img{
+    width: 20px;
+    margin-right: 10px;
+}
+.quote-box button:nth-child(2){
+    background: transparent;
+    color: #333333;
+}
+

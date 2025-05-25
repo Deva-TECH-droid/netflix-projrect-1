@@ -1,0 +1,19 @@
+.container{
+  border: 2px solid black;
+  display: flex;
+  height: 80vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.item{
+    height: 92px;
+    width: 92px;
+    border: 2px solid black;
+    margin: 4px;
+    background-color: blueviolet;
+    font-size: 28px;
+    text-transform: uppercase;
+    text-align: center;
+}
+ 

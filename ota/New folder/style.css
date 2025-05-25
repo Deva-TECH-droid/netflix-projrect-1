@@ -1,0 +1,137 @@
+/* div{
+    color: black;
+    background-color: blue;
+    padding: 10px;
+    margin: 10px;
+    border: 4px solid blue;
+}
+body{
+    background-color:yellow;
+}
+h2{
+    background-color: aqua;
+    padding: 10px;
+    margin: 10px;
+    border: 4px solid blue;
+}
+p{
+    color: azure;
+    background-color: brown;
+    padding: 10px;
+    margin: 10px;
+    border: 20px solid black;
+    height: 200px;
+    text-overflow: ellipsis;
+}
+
+h3{
+    color: orangered;
+    background-color: green;
+    padding: 10px;
+    margin: 10px;
+    border: 4px solid blue;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+a:visited{
+    color: blueviolet;
+    background-color: rgb(117, 30, 30);
+}
+a:link{
+    color: rgb(2, 161, 167);
+}
+a:hover{
+    background-color: rgb(230, 42, 136);
+}
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 32px;
+    line-height: initial;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration-color: yellowgreen;
+    text-decoration-thickness: 8px;
+    text-align: center;
+    text-overflow: ellipsis;
+}
+h1:hover{
+    background-color: crimson;
+}
+ol{
+    text-align: center;
+} */
+/* Basic reset and layout */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #1898e2;
+  }
+  
+  .container {
+    text-align: center;
+  }
+  
+  /* Styling the Subscribe button */
+  .subscribe-button {
+    background-color: #ba0009;
+    color: rgb(204, 226, 1);
+    font-size: 16px;
+    padding: 15px 25px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    transition: all 0.3s ease;
+    box-shadow: 0px 5px 10px hotpink;
+  }
+  
+  /* Hover effect */
+  .subscribe-button:hover {
+    background-color: #007bb5;
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .subscribe-button:active {
+    background-color: #00698c;
+    transform: translateY(0);
+  }
+  
+  /* Animation for the button */
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  .subscribe-button {
+    animation: pulse 1.5s infinite;
+  }
+  
+  /* For responsiveness */
+  @media (max-width: 600px) {
+    .subscribe-button {
+      padding: 12px 20px;
+      font-size: 14px;
+    }
+  }
+  

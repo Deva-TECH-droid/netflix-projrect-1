@@ -1,0 +1,90 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 10vh;
+    background: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.profile-card{
+    width: 60%;
+    max-width: 530px;
+    text-align: center;
+    background: #fff;
+    color: #333;
+}
+.cover-pic{
+    width: 530px;
+    margin-top: 60px;
+    box-shadow: 0 0 0px black;
+}
+.cover-pic:hover{
+box-shadow: 0 0 4px orange;
+}
+.profile-pic{
+    width: 240px;
+    border-radius: 60%;
+    margin-right: 70px;
+    margin-left: 30px;
+    margin-top: -80px;
+    box-shadow: 0 0 0 1px #000000;
+    transition: box-shadow 0.5s;
+}
+.profile-pic:hover{
+    box-shadow:  0 0 0 5px #059edb;;
+}
+.profile-card h1{
+    font-weight: 600;
+}
+.follow-btn{
+    display: inline-block;
+    text-decoration: none;
+    border:  1px solid #ff004f;
+    color: #555;
+    padding: 6px 35px;
+    margin: 25px 0;
+}
+.profile-card p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.row{
+    display: flex;
+    justify-content: space-around;
+}
+.row p{
+    border: 1px solid blue;
+    background-color: antiquewhite;
+    border-radius: 10px;
+
+}
+.row h2{
+    font-weight: 500;
+    font-size: 30px;
+    border: 2px solid rgb(52, 164, 209);
+    border-radius: 10px;
+    background-color: #a4ddf3;
+}
+.row p:hover{
+color: brown;
+background-color: #ff004f;
+}
+.view-btn{
+    display: inline-flex;
+    text-decoration: none;
+    text-align: center;
+    background: rgb(20, 156, 209);
+    color: #ffffff;
+    width: 100%;
+    padding: 15px 195px;
+    margin-top: 20px;
+}
+.view-btn:hover{
+    color: #ff004f;
+    box-shadow: 0 0 0 1px #000000; 
+}

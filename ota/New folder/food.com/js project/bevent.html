@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Digital Seconds Clock</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(135deg, #536679, #4ca1af);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .clock {
+      background-color: rgba(0, 0, 0, 0.6);
+      padding: 40px 60px;
+      border-radius: 20px;
+      box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+      text-align: center;
+    }
+
+    .time {
+      font-size: 60px;
+      color: #ffffff;
+      letter-spacing: 3px;
+      text-shadow: 0 0 10px #00e6e6, 0 0 20px #00e6e6;
+    }
+
+    .date {
+      font-size: 20px;
+      color: #e0e0e0;
+      margin-top: 10px;
+      font-weight: 300;
+    }
+  </style>
+</head>
+<body>
+  <div class="clock">
+    <div class="time" id="time">--:--:--</div>
+    <div class="date" id="date">Loading date...</div>
+  </div>
+
+  <script>
+    function updateClock() {
+      const now = new Date();
+    //   yaha ghadhi me jaan dal di hai  
+      const hours = String(now.getHours()).padStart(2, '0');
+      const minutes = String(now.getMinutes()).padStart(2, '0');
+      const seconds = String(now.getSeconds()).padStart(2, '0');
+      const timeString = `${hours}:${minutes}:${seconds}`;
+
+      const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+      const dateString = now.toLocaleDateString(undefined, options);
+
+      document.getElementById('time').textContent = timeString;
+      document.getElementById('date').textContent = dateString;
+    }
+    //  yaha todha function dala hai
+    setInterval(updateClock, 1000);
+    updateClock(); // Initial call
+  </script>
+</body>
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <!--=============== ICONS ===============-->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.min.css">
+
+   <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+
+   <!--=============== SWIPER CSS ===============-->
+   <link rel="stylesheet" href="swiper-bundle.min.css">
+
+   <!--=============== CSS ===============-->
+   <link rel="stylesheet" href="movie.css">
+
+   <title>Responsive Movies Website</title>
+</head>
+
+<body>
+   <img src="hitman_bg.jpeg" alt="image" class="bg__image">
+   <div class="bg__blur"></div>
+
+   <!--==================== Header Section ====================-->
+   <header class="header" id="header">
+      <div class="header__content">
+         <a href="#" class="header__logo">MOVIEMANTRA</a>
+
+         <div class="header__actions">
+            <i class="ri-notification-2-line"></i>
+            <i class="ri-account-circle-line"></i>
+
+            <div class="header__menu" id="header-menu">
+               <i class="ri-menu-line"></i>
+            </div>
+         </div>
+      </div>
+
+      <form action="" class="header__search">
+         <i class="ri-search-line"></i>
+         <input type="search" placeholder="Search movies" class="header__input">
+      </form>
+   </header>
+
+   <!--==================== Navbar Section ====================-->
+   <nav class="nav" id="nav">
+      <div class="nav__menu">
+         <a href="#" class="nav__logo">MOVIEMANTRA</a>
+
+         <ul class="nav__list">
+            <li class="nav__item">
+               <a href="#" class="nav__link">
+                  <i class="ri-home-5-line"></i> <span>Home</span>
+               </a>
+            </li>
+
+            <li class="nav__item">
+               <a href="#trending" class="nav__link">
+                  <i class="ri-send-plane-fill"></i> <span>Trending</span>
+               </a>
+            </li>
+
+            <li class="nav__item">
+               <a href="#popular" class="nav__link">
+                  <i class="ri-fire-line"></i> <span>Popular</span>
+               </a>
+            </li>
+
+            <li class="nav__item">
+               <a href="#Favorites" class="nav__link">
+                  <i class="ri-heart-3-line"></i> <span>Favorites</span>
+               </a>
+            </li>
+         </ul>
+
+         <div>
+            <h3 class="nav__title">Account</h3>
+
+            <ul class="nav__list">
+               <li class="nav__item">
+                  <a href="#" class="nav__link">
+                     <i class="ri-account-circle-line"></i> <span>Profile</span>
+                  </a>
+               </li>
+            </ul>
+         </div>
+      </div>
+
+      <a href="#" class="nav__link">
+         <i class="ri-logout-box-line"></i> <span>Log Out</span>
+      </a>
+
+      <div class="nav__close" id="nav-close">
+         <i class="ri-close-line"></i>
+      </div>
+   </nav>
+
+   <main class="main">
+      <section class="banner">
+         <article class="banner__card">
+            <a href="#" class="banner__link">
+               <img src="hitman_bg.jpeg" alt="image" class="banner__img">
+               <div class="banner__shadow"></div>
+
+               <div class="banner__data">
+                  <h2 class="banner__title">Hitman Wife's Bodyguard</h2>
+                  <span class="banner__category">Action/Comedy</span>
+               </div>
+            </a>
+         </article>
+      </section>
+
+      <!--==================== Trending Movies ====================-->
+
+      <section class="new">
+         <h3 class="card__title" id="trending">Trending</h3>
+
+         <div class="new__swiper swiper">
+            <div class="swiper-wrapper">
+               <article class="new__card card__article swiper-slide">
+                  <a href="#" class="card__link">
+                     <img src="t01.jpeg" alt="image" class="card__img">
+                     <div class="card__shadow"></div>
+
+                     <div class="new__data card__data">
+                        <h3 class="card__name">Jungle Cruise</h3>
+                        <span class="card__category">Adventure/Comedy</span>
+                     </div>
+                  </a>
+               </article>
+
+               <article class="new__card card__article swiper-slide">
+                  <a href="#" class="card__link">
+                     <img src="t02.jpeg" alt="image" class="card__img">
+                     <div class="card__shadow"></div>
+
+                     <div class="new__data card__data">
+                        <h3 class="card__name">Spiderman</h3>
+                        <span class="card__category">Sci-fi/Action</span>
+                     </div>
+                  </a>
+               </article>
+
+               <article class="new__card card__article swiper-slide">
+                  <a href="#" class="card__link">
+                     <img src="t03.jpeg" alt="image" class="card__img">
+                     <div class="card__shadow"></div>
+
+                     <div class="new__data card__data">
+                        <h3 class="card__name">Squid Game</h3>
+                        <span class="card__category">Thriler</span>
+                     </div>
+                  </a>
+               </article>
+
+               <article class="new__card card__article swiper-slide">
+                  <a href="#" class="card__link">
+                     <img src="t04.jpeg" alt="image" class="card__img">
+                     <div class="card__shadow"></div>
+
+                     <div class="new__data card__data">
+                        <h3 class="card__name">Hitman wife's</h3>
+                        <span class="card__category">Action/Comedy</span>
+                     </div>
+                  </a>
+               </article>
+
+               <article class="new__card card__article swiper-slide">
+                  <a href="#" class="card__link">
+                     <img src="t05.jpg" alt="image" class="card__img">
+                     <div class="card__shadow"></div>
+
+                     <div class="new__data card__data">
+                        <h3 class="card__name">Warcraft</h3>
+                        <span class="card__category">Action/Sci-fi</span>
+                     </div>
+                  </a>
+               </article>
+
+               <article class="new__card card__article swiper-slide">
+                  <a href="#" class="card__link">
+                     <img src="t06.jpg" alt="image" class="card__img">
+                     <div class="card__shadow"></div>
+
+                     <div class="new__data card__data">
+                        <h3 class="card__name">John Wick II</h3>
+                        <span class="card__category">Action</span>
+                     </div>
+                  </a>
+               </article>
+            </div>
+         </div>
+         <div class="swiper-pagination"></div>
+      </section>
+
+      <!--==================== Popular Movies ====================-->
+      <section class="movie" id="popular">
+         <h3 class="card__title">Popular</h3>
+
+         <div class="movie__swiper swiper">
+            <div class="swiper-wrapper">
+               <article class="card__article swiper-slide">
+                  <a href="#" class="card__link">
+                     <img src="m01.jpeg" alt="image" class="card__img">
+                     <div class="card__shadow"></div>
+
+                     <div class="card__data">
+                        <h3 class="card__name">Loki</h3>
+                        <span class="card__category">Sci-fi</span>
+                     </div>
+
+                     <i class="ri-heart-3-line card__like"></i>
+                  </a>
+               </article>
+
+               <article class="card__article swiper-slide">
+                  <a href="#" class="card__link">
+                     <img src="m02.jpg" alt="image" class="card__img">
+                     <div class="card__shadow"></div>
+
+                     <div class="card__data">
+                        <h3 class="card__name">Thor</h3>
+                        <span class="card__category">Sci-fi</span>
+                     </div>
+
+                     <i class="ri-heart-3-line card__like"></i>
+                  </a>
+               </article>
+
+               <article class="card__article swiper-slide">
+                  <a href="#" class="card__link">
+                     <img src="m03.jpeg" alt="image" class="card__img">
+                     <div class="card__shadow"></div>
+
+                     <div class="card__data">
+                        <h3 class="card__name">Doctor Strange</h3>
+                        <span class="card__category">Sci-fi</span>
+                     </div>
+
+                     <i class="ri-heart-3-line card__like"></i>
+                  </a>
+               </article>
+
+               <article class="card__article swiper-slide">
+                  <a href="#" class="card__link">
+                     <img src="m04.jpg" alt="image" class="card__img">
+                     <div class="card__shadow"></div>
+
+                     <div class="card__data">
+                        <h3 class="card__name">Ms. Marvel</h3>
+                        <span class="card__category">Sci-fi/Action</span>
+                     </div>
+
+                     <i class="ri-heart-3-line card__like"></i>
+                  </a>
+               </article>
+
+               <article class="card__article swiper-slide">
+                  <a href="#" class="card__link">
+                     <img src="m05.jpg" alt="image" class="card__img">
+                     <div class="card__shadow"></div>
+
+                     <div class="card__data">
+                        <h3 class="card__name">Black Widow</h3>
+                        <span class="card__category">Action/Thriler</span>
+                     </div>
+
+                     <i class="ri-heart-3-line card__like"></i>
+                  </a>
+               </article>
+
+               <article class="card__article swiper-slide">
+                  <a href="#" class="card__link">
+                     <img src="m06.jpg" alt="image" class="card__img">
+                     <div class="card__shadow"></div>
+
+                     <div class="card__data">
+                        <h3 class="card__name">Aquaman</h3>
+                        <span class="card__category">Sci-fi/Adventure</span>
+                     </div>
+
+                     <i class="ri-heart-3-line card__like"></i>
+                  </a>
+               </article>
+            </div>
+         </div>
+      </section>
+
+      <section class="movies" id="Favorites">
+         <div class="heading">
+            <h1>Favorites</h1>
+         </div>
+         <div class="movie-cards movie_swiper swiper">
+            <div class="swiper-wrapper">
+               <div class="movie-card swiper-slide">
+                  <img src="m1.jpg" alt="" />
+                  <h1>Venom</h1>
+                  <h2>120 Min | Action</h2>
+               </div>
+               <div class="movie-card swiper-slide">
+                  <img src="m2.jpg" alt="" />
+                  <h1>Dunkerk</h1>
+                  <h2>120 Min | Adventure</h2>
+               </div>
+               <div class="movie-card swiper-slide">
+                  <img src="m3.jpg" alt="" />
+                  <h1>Batman Vs Superman</h1>
+                  <h2>120 Min | Triller</h2>
+               </div>
+               <div class="movie-card swiper-slide">
+                  <img src="m4.jpg" alt="" />
+                  <h1>John Wick : Chapter 2</h1>
+                  <h2>120 Min | Adventure</h2>
+               </div>
+               <div class="movie-card swiper-slide">
+                  <img src="m5.jpg" alt="" />
+                  <h1>Aquaman</h1>
+                  <h2>120 Min | Action</h2>
+               </div>
+               <div class="movie-card swiper-slide">
+                  <img src="m6.jpg" alt="" />
+                  <h1>Black Panther</h1>
+                  <h2>120 Min | Action</h2>
+               </div>
+               <div class="movie-card swiper-slide">
+                  <img src="m7.jpg" alt="" />
+                  <h1>Thor</h1>
+                  <h2>120 Min | Action</h2>
+               </div>
+               <div class="movie-card swiper-slide">
+                  <img src="m8.png" alt="" />
+                  <h1>Bumblebee</h1>
+                  <h2>120 Min | Action</h2>
+               </div>
+               <div class="movie-card swiper-slide">
+                  <img src="m9.jpg" alt="" />
+                  <h1>Mortal Engines</h1>
+                  <h2>120 Min | Action</h2>
+               </div>
+               <div class="movie-card swiper-slide">
+                  <img src="m10.jpg" alt="" />
+                  <h1>Underworld Blood Wars</h1>
+                  <h2>120 Min | Action</h2>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="newsletter" id="newsletter">
+         <h1>Subscribe To NewsLetter</h1>
+         <div class="input-box">
+            <input type="text" name="" id="" placeholder="Enter Email" />
+            <input type="button" value="Subscribe" class="btn" placeholder="Subscribe" />
+         </div>
+      </section>
+       
+      <section class="footer">
+         <img class="bg" src="hitman_bg.jpeg" alt="" />
+         <div class="social-links">
+            <i class="bx bxl-facebook"></i>
+            <i class="bx bxl-instagram"></i>
+            <i class="bx bxl-linkedin"></i>
+            <i class="bx bxl-youtube"></i>
+         </div>
+      </section>
+   </main>
+
+
+
+   <!--==================== Scripts ====================-->
+
+   <script src="swiper-bundle.min.js"></script>
+   <script src="movi.js"></script>
+</body>
+
+</html>
